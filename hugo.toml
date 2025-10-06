@@ -8,7 +8,8 @@ languageCode = "en"
   description = "Your blog description"
   keywords = "blog,developer,personal"
   info = ["Software Engineer"]
-  avatarURL = "images/avatar.jpg"  # optional
+  # avatarURL = "images/avatar.jpg"  # optional
+  colorScheme = "auto"
 
 [[params.social]]
   name = "Github"
