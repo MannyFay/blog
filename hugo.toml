@@ -1,0 +1,36 @@
+baseURL = "https://MannyFay.github.io/blog/"
+title = "My Blog"
+theme = "hugo-coder"
+languageCode = "en"
+
+[params]
+  author = "Manuel-Hubertus Fay"
+  description = "Your blog description"
+  keywords = "blog,developer,personal"
+  info = ["Software Engineer"]
+  avatarURL = "images/avatar.jpg"  # optional
+
+[[params.social]]
+  name = "Github"
+  icon = "fa-brands fa-github"
+  weight = 1
+  url = "https://github.com/MannyFay/"
+
+[[params.social]]
+  name = "Twitter"
+  icon = "fa-brands fa-twitter"
+  weight = 2
+  url = "https://twitter.com/FayManny/"
+
+[languages.en]
+  languageName = "English"
+
+[[languages.en.menu.main]]
+  name = "Blog"
+  weight = 1
+  url = "posts/"
+
+[[languages.en.menu.main]]
+  name = "About"
+  weight = 2
+  url = "about/"
