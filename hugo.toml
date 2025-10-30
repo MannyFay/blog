@@ -3,6 +3,9 @@ title = "My Blog"
 theme = "hugo-coder"
 languageCode = "en"
 
+[markup.goldmark.renderer]
+  unsafe = true
+
 [params]
   author = "Manuel-Hubertus Fay"
   description = "Your blog description"
@@ -37,6 +40,6 @@ languageCode = "en"
   url = "about/"
 
 [[languages.en.menu.main]]
-  name = "Impressum"
+  name = "Site Notice"
   weight = 3
-  url = "impressum/"
+  url = "site-notice/"

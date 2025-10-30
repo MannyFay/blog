@@ -1,25 +1,24 @@
 +++
-title = "Impressum"
+title = "Site Notice"
 description = "Legal Notice"
 date = 2025-10-30
 aliases = ["site-notice", "legal-notice"]
 author = "Manuel-Hubertus Fay"
 +++
 
-## Site Notice
 
 **Information in accordance with Section 5 TMG (German Telemedia Act)**
 
-Manuel-Hubertus Fay
-Kurt-Schumacher-Straße 76
-c/o flexdienst – #11852
-67663 Kaiserslautern
+Manuel-Hubertus Fay<br>
+Kurt-Schumacher-Straße 76<br>
+c/o flexdienst – #11852<br>
+67663 Kaiserslautern<br>
 Germany
 
 ### Contact
 
-Telefon: +49 (0) 2247 9693339
-Telefax: +49 (0) 2217766292
+Telefon: +49 (0) 2247 9693339<br>
+Telefax: +49 (0) 2217766292<br>
 E-Mail: hike.mole3284@eagereverest.com
 
 ### Person Responsible for Content
