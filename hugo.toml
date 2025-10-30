@@ -35,3 +35,8 @@ languageCode = "en"
   name = "About"
   weight = 2
   url = "about/"
+
+[[languages.en.menu.main]]
+  name = "Impressum"
+  weight = 3
+  url = "impressum/"
