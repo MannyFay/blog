@@ -1,5 +1,5 @@
 baseURL = "https://blog.mhfay.de/"
-title = "My Blog"
+title = "Manny's Blog"
 theme = "hugo-coder"
 languageCode = "en"
 
@@ -10,7 +10,7 @@ languageCode = "en"
   author = "Manuel-Hubertus Fay"
   description = "Your blog description"
   keywords = "blog,developer,personal"
-  info = ["Software Engineer"]
+  info = ["Software Engineer • Command Liner • Automation Lover"]
   # avatarURL = "images/avatar.jpg"  # optional
   colorScheme = "auto"
 
@@ -30,16 +30,16 @@ languageCode = "en"
   languageName = "English"
 
 [[languages.en.menu.main]]
-  name = "Blog"
+  name = "POSTS"
   weight = 1
   url = "posts/"
 
 [[languages.en.menu.main]]
-  name = "About"
+  name = "ABOUT"
   weight = 2
   url = "about/"
 
 [[languages.en.menu.main]]
-  name = "Site Notice"
+  name = "SITE NOTICE"
   weight = 3
   url = "site-notice/"
