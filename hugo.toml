@@ -1,30 +1,122 @@
+#------------------------------------------------------------------------------
+# Hugo Configuration File
+#------------------------------------------------------------------------------
+
+
+#------------------------------------------------------------------------------
+# General Settings
+
 baseURL = "https://blog.mhfay.de/"
 title = "Manny's Blog"
 theme = "hugo-coder"
 languageCode = "en"
+enableRobotsTXT = true
+buildDrafts = false
+buildFuture = false
+
+
+#------------------------------------------------------------------------------
+# RSS Feed Settings
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+
+#------------------------------------------------------------------------------
+# Minifying Performance Settings
+
+[minify]
+  disableXML = true
+  minifyOutput = true
+
+
+#------------------------------------------------------------------------------
+# Code Highlighting Settings
 
 [markup.goldmark.renderer]
   unsafe = true
+[markup.highlight]
+  codeFences = true
+  lineNos = true
+  noClasses = false
+  style = "monokai"
+
+
+#------------------------------------------------------------------------------
+# Theme Specific Settings
 
 [params]
   author = "Manuel-Hubertus Fay"
-  description = "Your blog description"
-  keywords = "blog,developer,personal"
+  description = "Software Engineer writing about thougts and experiences"
+  keywords = "blog,developer,personal,software,engineering,technology"
   info = ["Software Engineer • Command Liner • Automation Lover"]
   # avatarURL = "images/avatar.jpg"  # optional
   colorScheme = "auto"
+  showReadingTime = true
+  showShareButtons = true
+  showCodeCopyButtons = true
 
-[[params.social]]
-  name = "Github"
-  icon = "fa-brands fa-github"
-  weight = 1
-  url = "https://github.com/MannyFay/"
+#--------------------------------------
+# Social Media Links
 
 [[params.social]]
   name = "Twitter"
-  icon = "fa-brands fa-twitter"
+  icon = "fa-brands fa-twitter fa-2x"
+  weight = 1
+  url = "https://x.com/FayManny"
+
+[[params.social]]
+  name = "LinkedIn"
+  icon = "fa-brands fa-linkedin fa-2x"
   weight = 2
-  url = "https://twitter.com/FayManny/"
+  url = "https://www.linkedin.com/in/manuel-hubertus-fay-0483a919a"
+
+[[params.social]]
+  name = "XING"
+  icon = "fa-brands fa-xing fa-2x"
+  weight = 3
+  url = "https://www.xing.com/profile/ManuelHubertus_Fay"
+
+[[params.social]]
+  name = "Homepage"
+  icon = "fa fa-user-circle fa-2x"
+  weight = 4
+  url = "https://mhfay.de/"
+
+[[params.social]]
+  name = "GitHub"
+  icon = "fa-brands fa-github fa-2x"
+  weight = 5
+  url = "https://github.com/MannyFay/"
+
+[[params.social]]
+  name = "GitLab"
+  icon = "fa-brands fa-gitlab fa-2x"
+  weight = 6
+  url = "https://gitlab.com/MannyFay"
+
+[[params.social]]
+  name = "Instagram"
+  icon = "fa-brands fa-instagram fa-2x"
+  weight = 7
+  url = "https://www.instagram.com/_mannyfay/"
+
+[[params.social]]
+  name = "Discord"
+  icon = "fa-brands fa-discord fa-2x"
+  weight = 8
+  url = "https://discordapp.com/users/915290890111709234"
+
+
+# [[params.social]]
+#   name = "RSS"
+#   icon = "fa-solid fa-rss"
+#   weight = 5
+#   url = "https://blog.mhfay.de/index.xml"
+
+
+#------------------------------------------------------------------------------
+# Pages Settings
 
 [languages.en]
   languageName = "English"
@@ -48,3 +140,4 @@ languageCode = "en"
   name = "SITE NOTICE"
   weight = 4
   url = "site-notice/"
+
