@@ -35,11 +35,16 @@ languageCode = "en"
   url = "posts/"
 
 [[languages.en.menu.main]]
-  name = "ABOUT"
+  name = "TAGS"
   weight = 2
+  url = "tags/"
+
+[[languages.en.menu.main]]
+  name = "ABOUT"
+  weight = 3
   url = "about/"
 
 [[languages.en.menu.main]]
   name = "SITE NOTICE"
-  weight = 3
+  weight = 4
   url = "site-notice/"
