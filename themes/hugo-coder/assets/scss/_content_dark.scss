@@ -1,0 +1,83 @@
+@mixin content_dark {
+  .content {
+    .post {
+      .tags {
+        .tag {
+          background-color: $alt-bg-color-dark;
+
+          a {
+            color: $fg-color-dark;
+          }
+          a:active {
+            color: $fg-color-dark;
+          }
+        }
+      }
+    }
+    .list {
+      ul {
+        li {
+          .title {
+            color: $fg-color-dark;
+
+            &:hover,
+            &:focus {
+              color: $link-color-dark;
+            }
+          }
+        }
+      }
+    }
+
+    .centered {
+      .about {
+        ul {
+          li {
+            a {
+              color: $fg-color-dark;
+
+              &:hover,
+              &:focus {
+                color: $link-color-dark;
+              }
+            }
+          }
+        }
+
+        .recent-post {
+          .recent-post-card {
+            background-color: #3d3d3d;
+            border-color: #5a5a5a;
+
+            &:hover {
+              border-color: $link-color-dark;
+              background-color: #454545;
+            }
+
+            .recent-post-title {
+              color: $fg-color-dark;
+            }
+
+            .recent-post-date {
+              color: $alt-fg-color-dark;
+            }
+
+            .recent-post-summary {
+              color: $fg-color-dark;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+body.colorscheme-dark {
+  @include content_dark();
+}
+
+body.colorscheme-auto {
+  @media (prefers-color-scheme: dark) {
+    @include content_dark();
+  }
+}

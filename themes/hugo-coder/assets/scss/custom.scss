@@ -1,0 +1,118 @@
+// Custom styles to fix recent post card
+
+.recent-post-card {
+  * {
+    border: none !important;
+    background: none !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    outline: none !important;
+  }
+
+  // Ensure no weird spacing or borders create visual separation
+  .recent-post-title,
+  .recent-post-date,
+  .recent-post-summary {
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+  }
+}
+
+// Search page styles
+.search-container {
+  margin-top: 3rem;
+
+  #search-input {
+    width: 100%;
+    padding: 1.2rem 1.6rem;
+    font-size: 1.8rem;
+    border: 2px solid $alt-bg-color;
+    border-radius: 0.6rem;
+    background-color: $bg-color;
+    color: $fg-color;
+    outline: none;
+    transition: border-color 0.3s;
+    font-family: $font-family;
+
+    &::placeholder {
+      color: $alt-fg-color;
+    }
+
+    &:focus {
+      border-color: $link-color;
+    }
+
+    @media only screen and (max-width: 768px) {
+      font-size: 1.6rem;
+      padding: 1rem 1.2rem;
+    }
+  }
+
+  #search-results {
+    margin-top: 3rem;
+
+    .search-info {
+      text-align: center;
+      color: $alt-fg-color;
+      font-size: 1.6rem;
+      padding: 2rem;
+    }
+
+    .search-results-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      .search-result-item {
+        margin-bottom: 2rem;
+
+        .search-result-card {
+          display: block;
+          text-decoration: none;
+          border: 2px solid $alt-fg-color;
+          border-radius: 0.8rem;
+          padding: 2rem;
+          transition: all 0.3s ease;
+          background-color: #f5f5f5;
+          overflow: hidden;
+
+          @media only screen and (max-width: 768px) {
+            padding: 1.5rem;
+            border-width: 2px;
+          }
+
+          &:hover {
+            border-color: $link-color;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            transform: translateY(-2px);
+          }
+
+          .search-result-title {
+            display: block;
+            font-size: 2.2rem;
+            font-weight: 600;
+            margin: 0 0 0.8rem 0;
+            color: $fg-color;
+
+            @media only screen and (max-width: 768px) {
+              font-size: 2rem;
+            }
+          }
+
+          .search-result-date {
+            display: block;
+            font-size: 1.4rem;
+            color: $alt-fg-color;
+            margin: 0;
+
+            @media only screen and (max-width: 768px) {
+              font-size: 1.2rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+.footer {
+  width: 100%;
+  text-align: center;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  margin-bottom: 1rem;
+  margin-top: 8rem;
+  @media only screen and (max-width: 768px) {
+    font-size: 1.5rem;
+    margin-top: 0;
+  }
+  a {
+    color: inherit !important;
+    text-decoration: underline;
+
+    &:hover,
+    &:focus {
+      color: $link-color !important;
+    }
+  }
+
+  .footer-copyright {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+
+  .footer-powered {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+
+  .footer-legal {
+    display: block;
+  }
+}

@@ -1,0 +1,155 @@
+@mixin navigation_dark {
+  .navigation {
+
+    a,
+    span {
+      color: $fg-color-dark;
+    }
+
+    a {
+      text-decoration: none;
+
+      &:hover {
+        color: $link-color-dark;
+        text-decoration: none;
+      }
+    }
+
+    .navigation-list {
+      @media only screen and (max-width: 768px) {
+        background-color: $bg-color-dark;
+      }
+
+      .menu-separator {
+        @media only screen and (max-width: 768px) {
+          border-top: 2px solid $fg-color-dark;
+        }
+      }
+    }
+
+    #menu-toggle {
+      @media only screen and (max-width: 768px) {
+        &:checked+label>i {
+          color: $alt-bg-color-dark;
+        }
+      }
+    }
+
+    i {
+      color: $fg-color-dark;
+
+      &:hover,
+      &:focus {
+        color: $link-color-dark;
+      }
+    }
+
+    .menu-button {
+      i {
+
+        &:hover,
+        &:focus {
+          color: $alt-fg-color-dark;
+        }
+      }
+    }
+
+    .mobile-colorscheme-toggle {
+      @media only screen and (max-width: 768px) {
+        color: $fg-color-dark !important;
+
+        &:hover,
+        &:focus,
+        &:active {
+          color: $fg-color-dark !important;
+          outline: none !important;
+        }
+
+        i {
+          color: $fg-color-dark !important;
+
+          &:hover,
+          &:focus,
+          &:active {
+            color: $fg-color-dark !important;
+            outline: none !important;
+          }
+        }
+      }
+    }
+
+    #dark-mode-toggle {
+      outline: none !important;
+      color: $fg-color-dark !important;
+
+      &:hover {
+        color: $link-color-dark !important;
+      }
+
+      &:focus {
+        outline: none !important;
+        color: $fg-color-dark !important;
+      }
+
+      i {
+        color: $fg-color-dark !important;
+        outline: none !important;
+
+        &:hover {
+          color: $link-color-dark !important;
+        }
+
+        &:focus {
+          color: $fg-color-dark !important;
+          outline: none !important;
+        }
+      }
+    }
+
+    .mobile-colorscheme-toggle {
+      outline: none !important;
+      color: $fg-color-dark !important;
+
+      &:hover {
+        color: $fg-color-dark !important;
+      }
+
+      &:focus {
+        outline: none !important;
+        color: $fg-color-dark !important;
+      }
+    }
+
+    .mobile-search-button {
+      @media only screen and (max-width: 768px) {
+        color: $fg-color-dark;
+
+        &:hover,
+        &:focus,
+        &:active {
+          color: $fg-color-dark !important;
+          outline: none;
+        }
+
+        i {
+          &:hover,
+          &:focus,
+          &:active {
+            color: $fg-color-dark !important;
+          }
+        }
+      }
+    }
+
+  }
+}
+
+body.colorscheme-dark {
+  @include navigation_dark();
+}
+
+body.colorscheme-auto {
+  @media (prefers-color-scheme: dark) {
+    @include navigation_dark();
+  }
+}

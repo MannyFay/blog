@@ -1,0 +1,57 @@
+// Dark mode styles for search page
+
+@mixin custom_dark {
+  .search-container {
+    #search-input {
+      background-color: $bg-color-dark;
+      color: $fg-color-dark;
+      border-color: $alt-bg-color-dark;
+
+      &::placeholder {
+        color: $alt-fg-color-dark;
+      }
+
+      &:focus {
+        border-color: $link-color-dark;
+      }
+    }
+
+    #search-results {
+      .search-info {
+        color: $alt-fg-color-dark;
+      }
+
+      .search-results-list {
+        .search-result-item {
+          .search-result-card {
+            background-color: #3d3d3d;
+            border-color: #5a5a5a;
+
+            &:hover {
+              border-color: $link-color-dark;
+              background-color: #454545;
+            }
+
+            .search-result-title {
+              color: $fg-color-dark;
+            }
+
+            .search-result-date {
+              color: $alt-fg-color-dark;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+body.colorscheme-dark {
+  @include custom_dark();
+}
+
+body.colorscheme-auto {
+  @media (prefers-color-scheme: dark) {
+    @include custom_dark();
+  }
+}
