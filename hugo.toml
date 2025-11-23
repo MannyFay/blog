@@ -49,10 +49,10 @@ buildFuture = false
   author = "Manuel-Hubertus Fay"
   description = "Software Engineer writing about thougts and experiences"
   keywords = "blog,developer,personal,software,engineering,technology"
-  info = ["Software Engineer • Command Liner • Automation Lover"]
-  # avatarURL = "images/avatar.jpg"  # optional
-  colorScheme = "auto"
-  showReadingTime = true
+  info = ["Software Engineer", "Command Liner", "Automation Lover"]
+  avatarURL = "images/profile-picture-500x500.jpg"
+  colorScheme = "dark"
+  showReadingTime = false
   showShareButtons = true
   showCodeCopyButtons = true
 
@@ -60,46 +60,46 @@ buildFuture = false
 # Social Media Links
 
 [[params.social]]
-  name = "Twitter"
-  icon = "fa-brands fa-twitter fa-2x"
+  name = "X"
+  icon = "fa-brands fa-x-twitter fa-2x"
   weight = 1
   url = "https://x.com/FayManny"
 
 [[params.social]]
-  name = "LinkedIn"
-  icon = "fa-brands fa-linkedin fa-2x"
-  weight = 2
-  url = "https://www.linkedin.com/in/manuel-hubertus-fay-0483a919a"
-
-[[params.social]]
-  name = "XING"
-  icon = "fa-brands fa-xing fa-2x"
-  weight = 3
-  url = "https://www.xing.com/profile/ManuelHubertus_Fay"
-
-[[params.social]]
-  name = "Homepage"
-  icon = "fa fa-user-circle fa-2x"
-  weight = 4
-  url = "https://mhfay.de/"
-
-[[params.social]]
   name = "GitHub"
   icon = "fa-brands fa-github fa-2x"
-  weight = 5
+  weight = 2
   url = "https://github.com/MannyFay/"
+
+[[params.social]]
+  name = "LinkedIn"
+  icon = "fa-brands fa-linkedin fa-2x"
+  weight = 3
+  url = "https://www.linkedin.com/in/manuel-hubertus-fay-0483a919a"
 
 [[params.social]]
   name = "GitLab"
   icon = "fa-brands fa-gitlab fa-2x"
-  weight = 6
+  weight = 4
   url = "https://gitlab.com/MannyFay"
+
+[[params.social]]
+  name = "XING"
+  icon = "fa-brands fa-xing fa-2x"
+  weight = 5
+  url = "https://www.xing.com/profile/ManuelHubertus_Fay"
 
 [[params.social]]
   name = "Instagram"
   icon = "fa-brands fa-instagram fa-2x"
-  weight = 7
+  weight = 6
   url = "https://www.instagram.com/_mannyfay/"
+
+[[params.social]]
+  name = "Profile"
+  icon = "fa fa-user-circle fa-2x"
+  weight = 7
+  url = "https://mhfay.de/"
 
 [[params.social]]
   name = "Discord"
@@ -135,9 +135,4 @@ buildFuture = false
   name = "ABOUT"
   weight = 3
   url = "about/"
-
-[[languages.en.menu.main]]
-  name = "SITE NOTICE"
-  weight = 4
-  url = "site-notice/"
 
