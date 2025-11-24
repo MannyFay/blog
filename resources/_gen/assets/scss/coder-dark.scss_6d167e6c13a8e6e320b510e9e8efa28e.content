@@ -147,9 +147,13 @@ body.colorscheme-dark {
         background-color: #454545; } }
 
 body.colorscheme-dark .content .post .post-meta .date .share-buttons a {
-  color: #dadada; }
+  color: #dadada !important; }
   body.colorscheme-dark .content .post .post-meta .date .share-buttons a:hover {
-    color: #42a5f5; }
+    color: #42a5f5 !important; }
+  body.colorscheme-dark .content .post .post-meta .date .share-buttons a i {
+    color: #dadada !important; }
+    body.colorscheme-dark .content .post .post-meta .date .share-buttons a i:hover {
+      color: #42a5f5 !important; }
 
 body.colorscheme-dark .content .post .tags .tag {
   background-color: #424242; }
@@ -183,9 +187,13 @@ body.colorscheme-dark .content .centered .about .recent-post .recent-post-card {
 
 @media (prefers-color-scheme: dark) {
   body.colorscheme-auto .content .post .post-meta .date .share-buttons a {
-    color: #dadada; }
+    color: #dadada !important; }
     body.colorscheme-auto .content .post .post-meta .date .share-buttons a:hover {
-      color: #42a5f5; }
+      color: #42a5f5 !important; }
+    body.colorscheme-auto .content .post .post-meta .date .share-buttons a i {
+      color: #dadada !important; }
+      body.colorscheme-auto .content .post .post-meta .date .share-buttons a i:hover {
+        color: #42a5f5 !important; }
   body.colorscheme-auto .content .post .tags .tag {
     background-color: #424242; }
     body.colorscheme-auto .content .post .tags .tag a {

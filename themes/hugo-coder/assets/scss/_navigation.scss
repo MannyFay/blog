@@ -263,13 +263,13 @@
   }
 
   .mobile-rss-button {
-    display: none;
+    display: none !important;
 
     @media only screen and (max-width: 768px) {
-      display: block;
-      position: absolute;
-      right: 2rem;
-      top: 10.5rem;
+      display: block !important;
+      position: absolute !important;
+      right: 2rem !important;
+      top: 10.5rem !important;
       font-size: 2.3rem;
       z-index: 1000;
       color: $fg-color;

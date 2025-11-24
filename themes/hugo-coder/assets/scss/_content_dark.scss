@@ -5,10 +5,18 @@
         .date {
           .share-buttons {
             a {
-              color: $fg-color-dark;
+              color: $fg-color-dark !important;
 
               &:hover {
-                color: $link-color-dark;
+                color: $link-color-dark !important;
+              }
+
+              i {
+                color: $fg-color-dark !important;
+
+                &:hover {
+                  color: $link-color-dark !important;
+                }
               }
             }
           }

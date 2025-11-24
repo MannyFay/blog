@@ -79,25 +79,37 @@
       }
 
       .date {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+        flex-wrap: nowrap !important;
 
         .posted-on {
           margin-left: 0;
           margin-right: 1.5rem;
+          flex-shrink: 0;
         }
 
         .share-buttons {
-          margin-left: auto;
+          margin-left: auto !important;
+          flex-shrink: 0;
 
           a {
-            color: $fg-color;
+            color: $fg-color !important;
             margin-left: 1rem;
             text-decoration: none;
 
             &:hover {
-              color: $link-color;
+              color: $link-color !important;
+            }
+
+            i {
+              color: $fg-color !important;
+
+              &:hover {
+                color: $link-color !important;
+              }
             }
           }
         }
