@@ -10692,9 +10692,21 @@ figure {
     width: 1.6rem;
     margin-left: 0;
     margin-right: 0.5rem; }
-  .content .post .post-meta .date .posted-on {
-    margin-left: 0;
-    margin-right: 1.5rem; }
+  .content .post .post-meta .date {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .content .post .post-meta .date .posted-on {
+      margin-left: 0;
+      margin-right: 1.5rem; }
+    .content .post .post-meta .date .share-buttons {
+      margin-left: auto; }
+      .content .post .post-meta .date .share-buttons a {
+        color: #212121;
+        margin-left: 1rem;
+        text-decoration: none; }
+        .content .post .post-meta .date .share-buttons a:hover {
+          color: #1565c0; }
   .content .post .post-meta .tags .tag {
     display: inline-block;
     padding: 0.3rem 0.6rem;

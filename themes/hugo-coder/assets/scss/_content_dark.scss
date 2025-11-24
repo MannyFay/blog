@@ -1,6 +1,20 @@
 @mixin content_dark {
   .content {
     .post {
+      .post-meta {
+        .date {
+          .share-buttons {
+            a {
+              color: $fg-color-dark;
+
+              &:hover {
+                color: $link-color-dark;
+              }
+            }
+          }
+        }
+      }
+
       .tags {
         .tag {
           background-color: $alt-bg-color-dark;

@@ -20,10 +20,20 @@
                 {{ .Date | time.Format (.Site.Params.dateFormat | default "January 2, 2006" ) }}
               </time>
             </span>
-            <span class="reading-time">
-              <i class="fa-solid fa-clock" aria-hidden="true"></i>
-              {{ i18n "reading_time" .ReadingTime }}
+            {{ if .Site.Params.showShareButtons }}
+            <span class="share-buttons">
+              <i class="fa-solid fa-share-nodes" aria-hidden="true"></i>
+              <a href="https://twitter.com/intent/tweet?url={{ .Permalink | absURL }}&text={{ .Title }}" target="_blank" rel="noopener" title="Share on X">
+                <i class="fa-brands fa-x-twitter"></i>
+              </a>
+              <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ .Permalink | absURL }}" target="_blank" rel="noopener" title="Share on LinkedIn">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+              <a href="mailto:?subject={{ .Title }}&body={{ .Permalink | absURL }}" title="Share via Email">
+                <i class="fa-solid fa-envelope"></i>
+              </a>
             </span>
+            {{ end }}
           </div>
           {{ with .GetTerms "authors" }}{{ partial "taxonomy/authors.html" . }}{{ end }}
           {{ with .GetTerms "categories" }}{{ partial "taxonomy/categories.html" . }}{{ end }}

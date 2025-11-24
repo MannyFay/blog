@@ -132,6 +132,11 @@ body.colorscheme-dark {
     body.colorscheme-auto table tr th:last-child {
       border-right: 0; } }
 
+body.colorscheme-dark .content .post .post-meta .date .share-buttons a {
+  color: #dadada; }
+  body.colorscheme-dark .content .post .post-meta .date .share-buttons a:hover {
+    color: #42a5f5; }
+
 body.colorscheme-dark .content .post .tags .tag {
   background-color: #424242; }
   body.colorscheme-dark .content .post .tags .tag a {
@@ -163,6 +168,10 @@ body.colorscheme-dark .content .centered .about .recent-post .recent-post-card {
     color: #dadada; }
 
 @media (prefers-color-scheme: dark) {
+  body.colorscheme-auto .content .post .post-meta .date .share-buttons a {
+    color: #dadada; }
+    body.colorscheme-auto .content .post .post-meta .date .share-buttons a:hover {
+      color: #42a5f5; }
   body.colorscheme-auto .content .post .tags .tag {
     background-color: #424242; }
     body.colorscheme-auto .content .post .tags .tag a {

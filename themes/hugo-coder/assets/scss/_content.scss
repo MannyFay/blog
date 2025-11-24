@@ -79,9 +79,27 @@
       }
 
       .date {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
         .posted-on {
           margin-left: 0;
           margin-right: 1.5rem;
+        }
+
+        .share-buttons {
+          margin-left: auto;
+
+          a {
+            color: $fg-color;
+            margin-left: 1rem;
+            text-decoration: none;
+
+            &:hover {
+              color: $link-color;
+            }
+          }
         }
       }
 
