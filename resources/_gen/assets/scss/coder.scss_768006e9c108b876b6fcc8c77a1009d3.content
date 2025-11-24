@@ -11340,8 +11340,28 @@ figure {
           outline: none; }
         .navigation .mobile-search-button i:hover, .navigation .mobile-search-button i:focus, .navigation .mobile-search-button i:active {
           color: #212121 !important; } }
+  .navigation .mobile-rss-button {
+    display: none; }
+    @media only screen and (max-width: 768px) {
+      .navigation .mobile-rss-button {
+        display: block;
+        position: absolute;
+        right: 2rem;
+        top: 10.5rem;
+        font-size: 2.3rem;
+        z-index: 1000;
+        color: #212121;
+        cursor: pointer; }
+        .navigation .mobile-rss-button:hover, .navigation .mobile-rss-button:focus, .navigation .mobile-rss-button:active {
+          color: #212121 !important;
+          outline: none; }
+        .navigation .mobile-rss-button i:hover, .navigation .mobile-rss-button i:focus, .navigation .mobile-rss-button i:active {
+          color: #212121 !important; } }
   @media only screen and (max-width: 768px) {
     .navigation .desktop-search {
+      display: none !important; } }
+  @media only screen and (max-width: 768px) {
+    .navigation .desktop-rss {
       display: none !important; } }
   .navigation #menu-toggle {
     display: none; }

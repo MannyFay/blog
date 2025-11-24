@@ -262,7 +262,43 @@
     }
   }
 
+  .mobile-rss-button {
+    display: none;
+
+    @media only screen and (max-width: 768px) {
+      display: block;
+      position: absolute;
+      right: 2rem;
+      top: 10.5rem;
+      font-size: 2.3rem;
+      z-index: 1000;
+      color: $fg-color;
+      cursor: pointer;
+
+      &:hover,
+      &:focus,
+      &:active {
+        color: $fg-color !important;
+        outline: none;
+      }
+
+      i {
+        &:hover,
+        &:focus,
+        &:active {
+          color: $fg-color !important;
+        }
+      }
+    }
+  }
+
   .desktop-search {
+    @media only screen and (max-width: 768px) {
+      display: none !important;
+    }
+  }
+
+  .desktop-rss {
     @media only screen and (max-width: 768px) {
       display: none !important;
     }
