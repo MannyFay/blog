@@ -78,6 +78,17 @@
   table tr th:last-child {
     border-right: 0;
   }
+
+  #back-to-top {
+    background-color: #3d3d3d;
+    color: $alt-fg-color-dark;
+    border-color: #5a5a5a;
+
+    &:hover {
+      border-color: $link-color-dark;
+      background-color: #454545;
+    }
+  }
 }
 
 body.colorscheme-dark {

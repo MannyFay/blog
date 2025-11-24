@@ -64,6 +64,13 @@ body.colorscheme-dark {
   body.colorscheme-dark table tr td:last-child,
   body.colorscheme-dark table tr th:last-child {
     border-right: 0; }
+  body.colorscheme-dark #back-to-top {
+    background-color: #3d3d3d;
+    color: #dadada;
+    border-color: #5a5a5a; }
+    body.colorscheme-dark #back-to-top:hover {
+      border-color: #42a5f5;
+      background-color: #454545; }
 
 @media (prefers-color-scheme: dark) {
   body.colorscheme-auto {
@@ -130,7 +137,14 @@ body.colorscheme-dark {
       border-left: 0; }
     body.colorscheme-auto table tr td:last-child,
     body.colorscheme-auto table tr th:last-child {
-      border-right: 0; } }
+      border-right: 0; }
+    body.colorscheme-auto #back-to-top {
+      background-color: #3d3d3d;
+      color: #dadada;
+      border-color: #5a5a5a; }
+      body.colorscheme-auto #back-to-top:hover {
+        border-color: #42a5f5;
+        background-color: #454545; } }
 
 body.colorscheme-dark .content .post .post-meta .date .share-buttons a {
   color: #dadada; }

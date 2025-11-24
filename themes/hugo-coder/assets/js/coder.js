@@ -106,3 +106,25 @@ function setTheme(theme) {
 function rememberTheme(theme) {
     localStorage.setItem('colorscheme', theme);
 }
+
+// Back to top button
+const backToTopButton = document.getElementById('back-to-top');
+
+if (backToTopButton) {
+    // Show/hide button based on scroll position
+    window.addEventListener('scroll', () => {
+        if (window.pageYOffset > 300) {
+            backToTopButton.classList.add('visible');
+        } else {
+            backToTopButton.classList.remove('visible');
+        }
+    });
+
+    // Scroll to top on click
+    backToTopButton.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+}
