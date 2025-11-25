@@ -10693,21 +10693,21 @@ figure {
   @media only screen and (max-width: 768px) {
     .content {
       margin-top: 5.5rem;
-      margin-bottom: 1.6rem; } }
+      margin-bottom: 5rem; } }
   .content header {
     margin-top: 10rem;
     margin-bottom: 3.2rem; }
     @media only screen and (max-width: 768px) {
       .content header {
-        margin-top: 2rem; } }
+        margin-top: 5rem; } }
     .content header h1 {
       font-size: 4.2rem;
       line-height: 4.6rem;
       margin: 0; }
       @media only screen and (max-width: 768px) {
         .content header h1 {
-          font-size: 4rem;
-          line-height: 4.4rem; } }
+          font-size: 3.3rem;
+          line-height: 3.6rem; } }
   .content article a:where(.external-link):not(:has(img)):after {
     content: "\f08e";
     padding-left: 0.5em;
@@ -10727,8 +10727,22 @@ figure {
     -ms-hyphens: auto;
     -webkit-hyphens: auto;
     hyphens: auto; }
+  .content .post header {
+    margin-top: 10rem !important;
+    margin-bottom: 3.2rem !important; }
+    @media only screen and (max-width: 768px) {
+      .content .post header {
+        margin-top: 5rem !important; } }
   .content .post .post-title {
     margin-bottom: 0.75em; }
+    .content .post .post-title h1.title {
+      font-size: 4.2rem !important;
+      line-height: 4.6rem !important;
+      margin: 0 !important; }
+      @media only screen and (max-width: 768px) {
+        .content .post .post-title h1.title {
+          font-size: 3.3rem !important;
+          line-height: 3.6rem !important; } }
   .content .post .post-meta i {
     text-align: center;
     width: 1.6rem;
@@ -10825,7 +10839,7 @@ figure {
     text-align: left; }
     @media only screen and (max-width: 768px) {
       .centered .home-content {
-        margin-top: 6.5rem; } }
+        margin-top: 6.2rem; } }
     .centered .home-content p:first-child {
       font-size: 4.2rem;
       line-height: 4.6rem;
@@ -10845,6 +10859,9 @@ figure {
           margin-top: 0.1rem; } }
   .centered .about {
     text-align: left; }
+    @media only screen and (max-width: 768px) {
+      .centered .about {
+        margin-top: -4.125rem; } }
     .centered .about h1 {
       font-size: 4.2rem;
       line-height: 4.6rem;
