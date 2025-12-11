@@ -1,0 +1,14 @@
+# License
+
+## Blog Content
+
+All blog posts, articles, images, and other content in this repository are
+Copyright (c) 2025 Manuel-Hubertus Fay. All rights reserved.
+
+You may not reproduce, distribute, or create derivative works from this content
+without explicit written permission from the author.
+
+## Theme and Code
+
+The Hugo theme (hugo-coder) located in `themes/hugo-coder/` is licensed under
+the MIT License. See `themes/hugo-coder/LICENSE.md` for details.
